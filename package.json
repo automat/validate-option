@@ -1,0 +1,25 @@
+{
+    "name": "validate-option",
+    "version": "0.0.2",
+    "description": "Validates option parameters against a default option",
+    "main": "index.js",
+    "keywords": [
+        "object",
+        "key",
+        "validation"
+    ],
+    "author": {
+        "name": "Henryk Wollik",
+        "email": "hwollik@hotmail.com",
+        "url": "http://henrykwollik.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/automat/validate-option.git"
+    },
+    "homepage": "https://github.com/automat/validate-option",
+    "bugs": {
+        "url": "https://github.com/automat/validate-option/issues"
+    },
+    "license": "MIT"
+}
