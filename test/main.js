@@ -11,7 +11,18 @@ function foo(options){
     console.log(options);
 }
 
+function foo2(options){
+    options = validateOptions(options,defaults,false);
+    console.log(options);
+}
+
 foo(); //logs { a: 0, b: 1, c: 2 }
 foo({a:0}); //logs { a: 0, b: 1, c: 2 }
 foo({a:0,b:0}); //logs { a: 0, b: 0, c: 2 }
+
+foo2(); //logs {}
+foo2({a:0}); //logs {a:0}
+foo2({a:0,b:0}); //logs {a:0, b:0}
+
 foo({a:0,d:0}); //throws Invalid option "d". Available options: ["a", "b", "c"]
+foo2({a:0,d:0}); //throws Invalid option "d". Available options: ["a", "b", "c"]
