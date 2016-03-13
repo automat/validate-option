@@ -1,6 +1,6 @@
 {
     "name": "validate-option",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Validates option parameters against a default option",
     "main": "index.js",
     "keywords": [
