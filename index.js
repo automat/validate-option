@@ -1,3 +1,5 @@
+var deepcopy = require('deepcopy');
+
 module.exports = function(options,defaults,setDefaultValues){
     options = options || {};
     setDefaultValues = setDefaultValues === undefined ? true : setDefaultValues;
@@ -46,7 +48,7 @@ module.exports = function(options,defaults,setDefaultValues){
 
             for(var option in defaults){
                 validated[option] = options[option] === undefined ?
-                    defaults[option] :
+                    deepcopy(defaults[option]) :
                     options[option];
             }
         }
