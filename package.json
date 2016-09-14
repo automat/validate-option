@@ -1,6 +1,6 @@
 {
     "name": "validate-option",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Validates option parameters against a default option",
     "main": "index.js",
     "keywords": [
@@ -12,6 +12,9 @@
         "name": "Henryk Wollik",
         "email": "hwollik@hotmail.com",
         "url": "http://henrykwollik.com"
+    },
+    "dependencies": {
+        "deepcopy" : "0.6.3"
     },
     "repository": {
         "type": "git",
